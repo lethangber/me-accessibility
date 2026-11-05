@@ -1,0 +1,574 @@
+/**
+ * ME Accessibility - Premium License Dashboard Stylesheet
+ * 
+ * Elegant dark slate design with neon gradients, visual status indicators,
+ * responsive grids, animated focus states, and high visual hierarchy.
+ */
+
+:root {
+	--me-accent-color: #2563eb;
+	--me-accent-glow: rgba(37, 99, 235, 0.15);
+	--me-success-color: #10b981;
+	--me-success-glow: rgba(16, 185, 129, 0.15);
+	--me-error-color: #ef4444;
+	--me-error-glow: rgba(239, 68, 68, 0.15);
+	--me-warning-color: #f59e0b;
+	--me-slate-800: #1e293b;
+	--me-slate-900: #0f172a;
+}
+
+.me-licensing-container {
+	margin: 20px 20px 0 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	color: #1e293b;
+}
+
+/* 1. HERO SECTION */
+.me-licensing-hero {
+	background: linear-gradient(135deg, var(--me-slate-800) 0%, var(--me-slate-900) 100%);
+	color: #ffffff;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.3);
+	margin-bottom: 24px;
+	display: grid;
+	grid-template-columns: 1.4fr 1fr;
+	gap: 30px;
+	position: relative;
+	overflow: hidden;
+	align-items: center;
+}
+
+.me-licensing-hero::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	right: -10%;
+	width: 500px;
+	height: 500px;
+	background: radial-gradient(circle, rgba(37, 99, 235, 0.18) 0%, transparent 70%);
+	pointer-events: none;
+}
+
+.me-licensing-hero-content {
+	z-index: 2;
+}
+
+.me-licensing-hero h2 {
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 700;
+	margin: 0 0 12px 0;
+	line-height: 1.2;
+}
+
+.me-licensing-hero p {
+	font-size: 15px;
+	color: #94a3b8;
+	margin: 0;
+	line-height: 1.5;
+}
+
+.me-licensing-badge {
+	display: inline-block;
+	background: rgba(16, 185, 129, 0.15);
+	color: #34d399;
+	border: 1px solid rgba(16, 185, 129, 0.3);
+	padding: 4px 14px;
+	border-radius: 9999px;
+	font-size: 11px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+}
+
+.me-licensing-badge.me-badge-inactive {
+	background: rgba(245, 158, 11, 0.15);
+	color: #fbbf24;
+	border: 1px solid rgba(245, 158, 11, 0.3);
+	box-shadow: 0 0 12px rgba(245, 158, 11, 0.1);
+}
+
+/* HERO RIGHT SIDEBAR BADGES */
+.me-licensing-hero-art {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	border-radius: 10px;
+	padding: 24px;
+	z-index: 2;
+	position: relative;
+	backdrop-filter: blur(8px);
+}
+
+.me-hero-feature-checklist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.me-hero-feature-checklist li {
+	font-size: 14px;
+	color: #e2e8f0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+}
+
+.me-hero-feature-checklist li span.dashicons {
+	color: var(--me-success-color);
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.me-licensing-hero-art .dashicons-shield {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	font-size: 70px;
+	width: 70px;
+	height: 70px;
+	color: rgba(255, 255, 255, 0.02);
+	pointer-events: none;
+}
+
+/* 2. TRUST STRIP */
+.me-trust-strip {
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	padding: 16px 24px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 16px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.me-trust-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: #475569;
+	font-weight: 600;
+}
+
+.me-trust-item span.dashicons {
+	color: var(--me-accent-color);
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+/* 3. LAYOUT GRID */
+.me-licensing-grid {
+	display: grid;
+	grid-template-columns: 1.6fr 1fr;
+	gap: 30px;
+}
+
+.me-licensing-card {
+	background: #ffffff;
+	border-radius: 12px;
+	border: 1px solid #e2e8f0;
+	padding: 35px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.me-licensing-card h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 24px 0;
+	color: #0f172a;
+}
+
+/* 4. FORM AND CONVERSION */
+.me-activation-form-group {
+	margin-bottom: 24px;
+}
+
+.me-activation-form-group label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #475569;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.me-license-input-wrapper {
+	position: relative;
+	display: flex;
+	gap: 12px;
+}
+
+.me-license-key-input {
+	flex-grow: 1;
+	border: 1.5px solid #cbd5e1;
+	border-radius: 8px;
+	padding: 12px 16px;
+	font-size: 15px;
+	font-family: monospace;
+	background: #f8fafc;
+	color: #334155;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.me-license-key-input:focus {
+	border-color: var(--me-accent-color);
+	background: #ffffff;
+	box-shadow: 0 0 0 4px var(--me-accent-glow), inset 0 1px 2px rgba(0, 0, 0, 0.02);
+	outline: none;
+}
+
+.me-activate-btn {
+	background: var(--me-accent-color);
+	color: #ffffff;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.me-activate-btn:hover {
+	background: #1d4ed8;
+	transform: translateY(-1px);
+	box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.me-activate-btn:active {
+	transform: translateY(0);
+}
+
+/* PRICING CTA LINK */
+.me-pricing-cta-row {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.me-pricing-cta-row a {
+	color: var(--me-accent-color);
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.15s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.me-pricing-cta-row a:hover {
+	color: #1d4ed8;
+	text-decoration: underline;
+}
+
+/* 5. SIDEBAR LINKS CARD */
+.me-licensing-sidebar-card {
+	background: #ffffff;
+	border-radius: 12px;
+	border: 1px solid #e2e8f0;
+	padding: 30px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+	height: fit-content;
+}
+
+.me-licensing-sidebar-card h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+	color: #0f172a;
+}
+
+.me-quick-links-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.me-quick-links-list li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.me-quick-links-list li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.me-quick-links-list li span.dashicons {
+	color: #64748b;
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.me-quick-links-list li a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	color: #334155;
+	transition: all 0.15s ease;
+}
+
+.me-quick-links-list li a:hover {
+	color: var(--me-accent-color);
+	transform: translateX(2px);
+}
+
+/* 6. ACTIVATION STEPS CARD */
+.me-activation-steps {
+	background: #f8fafc;
+	border-radius: 8px;
+	padding: 24px;
+	border: 1px dashed #cbd5e1;
+	margin-top: 28px;
+}
+
+.me-activation-steps h4 {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 0 0 14px 0;
+	color: #475569;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.me-activation-steps ol {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.me-activation-steps li {
+	font-size: 13.5px;
+	color: #475569;
+	margin-bottom: 10px;
+	line-height: 1.45;
+}
+
+.me-activation-steps li:last-child {
+	margin-bottom: 0;
+}
+
+/* 7. AJAX FEEDBACKS */
+.me-license-ajax-feedback {
+	margin-top: 16px;
+	padding: 14px 18px;
+	border-radius: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	display: none;
+	align-items: center;
+	gap: 10px;
+}
+
+.me-license-ajax-feedback.me-success {
+	display: flex;
+	background: #ecfdf5;
+	color: #065f46;
+	border: 1px solid #a7f3d0;
+	box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+.me-license-ajax-feedback.me-error {
+	display: flex;
+	background: #fef2f2;
+	color: #991b1b;
+	border: 1px solid #fca5a5;
+	box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
+}
+
+.me-license-ajax-feedback.me-loading {
+	display: flex;
+	background: #f8fafc;
+	color: #475569;
+	border: 1px solid #cbd5e1;
+}
+
+.me-license-spinner {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #cbd5e1;
+	border-top-color: var(--me-accent-color);
+	border-radius: 50%;
+	animation: me-spin 0.8s infinite linear;
+}
+
+@keyframes me-spin {
+	to { transform: rotate(360deg); }
+}
+
+/* 8. ACTIVE STATUS CARD (SaaS UI) */
+.me-license-active-card {
+	border-top: 4px solid var(--me-success-color);
+}
+
+.me-license-active-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	padding-bottom: 16px;
+	border-bottom: 1.5px solid #f1f5f9;
+}
+
+.me-license-active-header h3 {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.me-active-pill {
+	background: var(--me-success-color);
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 4px 12px;
+	border-radius: 9999px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.me-active-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #ffffff;
+	animation: me-pulse-white 1.5s infinite;
+}
+
+@keyframes me-pulse-white {
+	0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
+	70% { box-shadow: 0 0 0 6px rgba(255, 255, 255, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+.me-active-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.me-active-stat-box {
+	background: #f8fafc;
+	border: 1px solid #f1f5f9;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.me-stat-label {
+	font-size: 12px;
+	font-weight: 700;
+	color: #64748b;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 6px;
+}
+
+.me-stat-value {
+	font-size: 16px;
+	font-weight: 700;
+	color: #0f172a;
+}
+
+.me-stat-value.me-highlight-success {
+	color: #059669;
+}
+
+.me-ratio-bar-wrapper {
+	margin-top: 10px;
+}
+
+.me-ratio-bar-bg {
+	background: #e2e8f0;
+	height: 6px;
+	border-radius: 9999px;
+	overflow: hidden;
+}
+
+.me-ratio-bar-fill {
+	background: var(--me-success-color);
+	height: 100%;
+	border-radius: 9999px;
+	transition: width 0.5s ease-out;
+}
+
+.me-badge-green {
+	background: #d1fae5;
+	color: #065f46;
+	padding: 3px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* 9. DEACTIVATION */
+.me-deactivate-btn-box {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
+	border-top: 1.5px solid #f1f5f9;
+}
+
+.me-deactivate-btn {
+	background: transparent;
+	color: var(--me-error-color) !important;
+	border: 1.5px solid var(--me-error-color);
+	padding: 10px 20px;
+	border-radius: 8px;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+.me-deactivate-btn:hover {
+	background: var(--me-error-color);
+	color: #ffffff !important;
+	box-shadow: 0 4px 12px var(--me-error-glow);
+}
+
+/* 10. RESPONSIVE MEDIA QUERIES */
+@media (max-width: 960px) {
+	.me-licensing-grid {
+		grid-template-columns: 1fr;
+	}
+	.me-licensing-hero {
+		grid-template-columns: 1fr;
+		padding: 30px;
+	}
+	.me-licensing-hero-art {
+		margin-top: 15px;
+	}
+}
+
+/* Verbergen des standardmäßigen WordPress-Footers auf unserer Lizenzseite */
+#wpfooter {
+	display: none !important;
+}

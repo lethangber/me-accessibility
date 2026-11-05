@@ -1,0 +1,667 @@
+/* Frontend Toolbar Styles für ME Accessibility */
+
+:root {
+	--me-widget-width: 360px;
+	--me-widget-bg-light: rgba(255, 255, 255, 0.95);
+	--me-widget-bg-dark: rgba(15, 23, 42, 0.95);
+	--me-widget-text-light: #1e293b;
+	--me-widget-text-dark: #cbd5e1;
+	--me-widget-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ==========================================
+   1. TRIGGER BUTTONS
+   ========================================== */
+.me-toolbar-trigger {
+	position: fixed;
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	background: var(--me-accent-color);
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	outline: none;
+}
+
+.me-toolbar-trigger:focus-visible {
+	outline: 3px solid #ffffff;
+	outline-offset: -3px;
+}
+
+/* Positionen des Triggers */
+.me-toolbar-trigger.me-position-right-bottom { right: var(--me-trigger-offset-side, 20px); bottom: var(--me-trigger-offset-bottom, 20px); }
+.me-toolbar-trigger.me-position-left-bottom { left: var(--me-trigger-offset-side, 20px); bottom: var(--me-trigger-offset-bottom, 20px); }
+.me-toolbar-trigger.me-position-right-center { right: var(--me-trigger-offset-side, 20px); top: 50%; transform: translateY(-50%); }
+.me-toolbar-trigger.me-position-left-center { left: var(--me-trigger-offset-side, 20px); top: 50%; transform: translateY(-50%); }
+
+/* Trigger-Arten */
+.me-toolbar-trigger.me-trigger-button {
+	width: var(--me-trigger-size, 56px);
+	height: var(--me-trigger-size, 56px);
+	border-radius: 50%;
+}
+.me-toolbar-trigger.me-trigger-badge {
+	padding: 12px 20px;
+	border-radius: 30px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.me-trigger-svg {
+	width: calc(var(--me-trigger-size, 56px) * 0.5);
+	height: calc(var(--me-trigger-size, 56px) * 0.5);
+	flex-shrink: 0;
+}
+
+/* ==========================================
+   2. FLOATING WIDGET CONTAINER
+   ========================================== */
+.me-toolbar-widget {
+	position: fixed;
+	width: var(--me-widget-width);
+	max-height: 80vh;
+	z-index: 999998;
+	border-radius: 16px;
+	box-shadow: var(--me-widget-shadow);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.9) translateY(20px);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	backdrop-filter: blur(10px);
+}
+
+.me-toolbar-widget.me-active {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1) translateY(0);
+}
+
+/* Positionierungen */
+.me-toolbar-widget.me-position-right-bottom,
+.me-toolbar-widget.me-position-right-center {
+	right: var(--me-trigger-offset-side, 20px);
+	bottom: calc(var(--me-trigger-offset-bottom, 20px) + 70px);
+}
+.me-toolbar-widget.me-position-left-bottom,
+.me-toolbar-widget.me-position-left-center {
+	left: var(--me-trigger-offset-side, 20px);
+	bottom: calc(var(--me-trigger-offset-bottom, 20px) + 70px);
+}
+
+/* Themes */
+.me-toolbar-widget.me-theme-light {
+	background: var(--me-widget-bg-light);
+	color: var(--me-widget-text-light);
+	border: 1px solid rgba(226, 232, 240, 0.8);
+}
+.me-toolbar-widget.me-theme-dark {
+	background: var(--me-widget-bg-dark);
+	color: var(--me-widget-text-dark);
+	border: 1px solid rgba(30, 41, 59, 0.8);
+}
+.me-toolbar-widget.me-theme-accessible-blue {
+	background: rgba(30, 58, 138, 0.98);
+	color: #f8fafc;
+	border: 1px solid rgba(59, 130, 246, 0.8);
+}
+
+/* Widget Header */
+.me-widget-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.me-theme-dark .me-widget-header {
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.me-widget-title-area {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.me-header-svg {
+	width: 24px;
+	height: 24px;
+	color: var(--me-accent-color);
+}
+
+.me-widget-header h3 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	color: inherit !important;
+}
+
+.me-widget-close {
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: inherit;
+	line-height: 1;
+	padding: 4px;
+}
+
+/* Widget Body & Scroll */
+.me-widget-body {
+	flex: 1;
+	overflow-y: auto;
+	padding: 20px;
+}
+
+.me-widget-section {
+	margin-bottom: 24px;
+}
+
+.me-widget-section h4 {
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--me-accent-color);
+}
+
+/* Profiles Grid */
+.me-profiles-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.me-profile-btn {
+	background: rgba(0, 0, 0, 0.02);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	padding: 12px;
+	text-align: left;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: inherit;
+}
+.me-theme-dark .me-profile-btn {
+	background: rgba(255, 255, 255, 0.02);
+	border-color: rgba(255, 255, 255, 0.08);
+}
+
+.me-profile-btn:hover {
+	border-color: var(--me-accent-color);
+}
+
+.me-profile-btn.me-active {
+	background: var(--me-accent-color) !important;
+	color: #ffffff !important;
+	border-color: var(--me-accent-color);
+}
+
+.me-profile-btn h5 {
+	margin: 0 0 4px 0;
+	font-size: 14px;
+	font-weight: 700;
+}
+.me-profile-btn p {
+	margin: 0;
+	font-size: 11px;
+	opacity: 0.8;
+}
+
+/* Actions Grid */
+.me-actions-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.me-action-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.02);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	padding: 10px 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: inherit;
+	text-align: center;
+}
+.me-theme-dark .me-action-btn {
+	background: rgba(255, 255, 255, 0.02);
+	border-color: rgba(255, 255, 255, 0.08);
+}
+
+.me-action-btn:hover {
+	border-color: var(--me-accent-color);
+}
+
+.me-action-btn.me-active {
+	background: var(--me-accent-color) !important;
+	color: #ffffff !important;
+	border-color: var(--me-accent-color);
+}
+
+.me-action-btn span {
+	font-size: 18px;
+	margin-bottom: 6px;
+	line-height: 1;
+}
+
+.me-action-btn label {
+	font-size: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* Footer Reset */
+.me-widget-footer {
+	padding: 16px 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.me-theme-dark .me-widget-footer {
+	border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.me-reset-all-btn {
+	width: 100%;
+	background: rgba(239, 68, 68, 0.1);
+	color: #ef4444;
+	border: 1px solid rgba(239, 68, 68, 0.2);
+	padding: 10px;
+	border-radius: 8px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.me-reset-all-btn:hover {
+	background: #ef4444;
+	color: #ffffff;
+}
+
+/* Branding-Zeile im Widget-Footer */
+.me-widget-branding {
+	margin-top: 10px;
+	font-size: 10px;
+	opacity: 0.45;
+	color: inherit;
+	letter-spacing: 0.03em;
+}
+
+.me-branding-link {
+	color: inherit !important;
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+	text-underline-offset: 2px;
+	opacity: 1;
+}
+
+/* ==========================================
+   3. NATIVE SPEECH synthesis PLAYER UI
+   ========================================== */
+.me-tts-player-box {
+	background: rgba(0, 0, 0, 0.04);
+	padding: 12px;
+	border-radius: 8px;
+}
+.me-theme-dark .me-tts-player-box {
+	background: rgba(255, 255, 255, 0.04);
+}
+
+.me-tts-controls {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.me-tts-control-btn {
+	background: var(--me-accent-color);
+	color: #ffffff;
+	border: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.me-tts-params select {
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 6px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.me-theme-dark .me-tts-params select {
+	background: #1e293b;
+	color: #ffffff;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+
+.me-tts-range-box {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 11px;
+}
+.me-tts-range-box input {
+	flex: 1;
+}
+
+/* ==========================================
+   4. ACCESSIBILITY MODIFIER CLASSES (ON HTML/BODY)
+   ========================================== */
+/* Kontraste */
+html.me-grayscale { filter: grayscale(1) !important; }
+html.me-high-contrast { filter: contrast(1.4) saturate(1.2) !important; }
+html.me-negative-contrast { filter: invert(1) hue-rotate(180deg) !important; }
+html.me-dark-mode { background-color: #000000 !important; color: #ffffff !important; }
+html.me-dark-mode body,
+html.me-dark-mode p,
+html.me-dark-mode div,
+html.me-dark-mode h1,
+html.me-dark-mode h2,
+html.me-dark-mode h3,
+html.me-dark-mode h4,
+html.me-dark-mode h5,
+html.me-dark-mode h6,
+html.me-dark-mode a { color: #f1f5f9 !important; background-color: #0e0e0e !important; }
+
+/* Schrift & Lesbarkeit */
+html.me-readable-font p,
+html.me-readable-font div,
+html.me-readable-font span,
+html.me-readable-font li { font-family: Arial, Helvetica, sans-serif !important; }
+
+html.me-dyslexia-font p,
+html.me-dyslexia-font div,
+html.me-dyslexia-font span,
+html.me-dyslexia-font li { font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif !important; }
+
+/* Zeiger */
+html.me-cursor-enlarge * { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cpolygon points='0,0 48,24 24,32 0,56' fill='%232563eb' stroke='white' stroke-width='3'/%3E%3C/svg%3E"), auto !important; }
+
+/* Lesehilfen */
+.me-reading-line {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--me-accent-color);
+	box-shadow: 0 0 10px var(--me-accent-color);
+	pointer-events: none;
+	z-index: 9999999;
+}
+
+.me-reading-mask {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	pointer-events: none;
+	z-index: 9999998;
+}
+
+/* Links & Headings hervorheben */
+html.me-highlight-links a { outline: 3px dashed var(--me-accent-color) !important; background-color: rgba(254, 243, 199, 0.7) !important; color: #000000 !important; }
+html.me-highlight-headings h1,
+html.me-highlight-headings h2,
+html.me-highlight-headings h3,
+html.me-highlight-headings h4,
+html.me-highlight-headings h5,
+html.me-highlight-headings h6 { border: 2px dashed var(--me-accent-color) !important; padding: 4px !important; background-color: rgba(219, 234, 254, 0.7) !important; color: #000000 !important; }
+
+/* Tastatur-Fokus Outline */
+html.me-keyboard-active *:focus {
+	outline: 4px solid var(--me-accent-color) !important;
+	outline-offset: 2px !important;
+}
+
+/* Animationen reduzieren */
+html.me-pause-animations *,
+html.me-pause-animations *:before,
+html.me-pause-animations *:after {
+	animation-duration: 0.001ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.001ms !important;
+	scroll-behavior: auto !important;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.me-toolbar-widget {
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		bottom: 0 !important;
+		right: 0 !important;
+		left: 0 !important;
+		border-radius: 0;
+	}
+}
+
+/* ==========================================
+   5. MANUAL LANGUAGE SWITCHER WIDGET STYLES (Dropdown)
+   ========================================== */
+.me-lang-section {
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.me-lang-dropdown {
+	position: relative;
+	width: 100%;
+	font-family: inherit;
+}
+
+.me-lang-dropdown-trigger {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	padding: 10px 14px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	color: #1e293b;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	text-align: left;
+	transition: all 0.2s ease;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+	outline: none;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.me-theme-dark .me-lang-dropdown-trigger {
+	background: #1e293b;
+	border-color: #334155;
+	color: #f8fafc;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-trigger {
+	background: #1e3a8a;
+	border-color: #3b82f6;
+	color: #ffffff;
+}
+
+.me-lang-dropdown-trigger:hover {
+	border-color: var(--me-accent-color);
+	box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-trigger:hover {
+	border-color: #ffffff;
+}
+
+.me-lang-dropdown-trigger[aria-expanded="true"] {
+	border-color: var(--me-accent-color);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.me-dropdown-selected-flag {
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.me-dropdown-selected-name {
+	flex: 1;
+}
+
+.me-dropdown-arrow {
+	font-size: 10px;
+	color: #64748b;
+	transition: transform 0.2s ease;
+}
+
+.me-theme-dark .me-dropdown-arrow {
+	color: #94a3b8;
+}
+
+.me-theme-accessible-blue .me-dropdown-arrow {
+	color: #93c5fd;
+}
+
+.me-lang-dropdown-trigger[aria-expanded="true"] .me-dropdown-arrow {
+	transform: rotate(180deg);
+}
+
+.me-lang-dropdown-list {
+	position: absolute;
+	top: calc(100% + 6px);
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+	max-height: 200px;
+	overflow-y: auto;
+	padding: 6px 0;
+	margin: 0;
+	list-style: none;
+	scrollbar-width: thin;
+	scrollbar-color: #cbd5e1 transparent;
+}
+
+.me-theme-dark .me-lang-dropdown-list {
+	background: #1e293b;
+	border-color: #334155;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-list {
+	background: #1e3a8a;
+	border-color: #3b82f6;
+}
+
+.me-lang-dropdown-list::-webkit-scrollbar {
+	width: 6px;
+}
+
+.me-lang-dropdown-list::-webkit-scrollbar-thumb {
+	background-color: #cbd5e1;
+	border-radius: 3px;
+}
+
+.me-theme-dark .me-lang-dropdown-list::-webkit-scrollbar-thumb {
+	background-color: #475569;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-list::-webkit-scrollbar-thumb {
+	background-color: #3b82f6;
+}
+
+.me-lang-dropdown-option {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px 14px;
+	color: #334155;
+	font-size: 13.5px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.15s, color 0.15s;
+}
+
+.me-theme-dark .me-lang-dropdown-option {
+	color: #cbd5e1;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-option {
+	color: #e0f2fe;
+}
+
+.me-lang-dropdown-option:hover {
+	background: #f1f5f9;
+	color: #0f172a;
+}
+
+.me-theme-dark .me-lang-dropdown-option:hover {
+	background: #334155;
+	color: #ffffff;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-option:hover {
+	background: #2563eb;
+	color: #ffffff;
+}
+
+.me-lang-dropdown-option.me-active {
+	background: #eff6ff;
+	color: var(--me-accent-color);
+	font-weight: 600;
+}
+
+.me-theme-dark .me-lang-dropdown-option.me-active {
+	background: #1e3a8a;
+	color: #3b82f6;
+}
+
+.me-theme-accessible-blue .me-lang-dropdown-option.me-active {
+	background: #1d4ed8;
+	color: #ffffff;
+}
+
+.me-option-flag {
+	width: 18px;
+	height: 18px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Keyboard active outline */
+html.me-keyboard-active .me-lang-dropdown-trigger:focus {
+	border-color: var(--me-accent-color);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+html.me-keyboard-active .me-theme-accessible-blue .me-lang-dropdown-trigger:focus {
+	border-color: #ffffff;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+

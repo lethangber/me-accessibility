@@ -1,0 +1,83 @@
+# Copyright (C) 2026 Me Toolkit
+# This file is distributed under the same license as the ME Accessibility plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ME Accessibility 3.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/me-accessibility\n"
+"Last-Translator: Me Toolkit <info@me-toolkit.com>\n"
+"Language-Team: Me Toolkit <info@me-toolkit.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-01T13:40:00+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: me-accessibility\n"
+
+#: modules/toolbar/class-toolbar-module.php:32
+msgid "Accessibility Toolbar"
+msgstr ""
+
+#: templates/admin-dashboard.php:117
+msgid "Schwebende Accessibility-Toolbar"
+msgstr ""
+
+#: templates/admin-dashboard.php:118
+msgid "Fügt ein schwebendes Widget auf Ihrer Website hinzu, über das Benutzer Schriftgrößen, Kontraste und Lesehilfen steuern können."
+msgstr ""
+
+#: templates/admin-dashboard.php:121
+msgid "Text-to-Speech (Vorlesefunktion)"
+msgstr ""
+
+#: templates/admin-dashboard.php:122
+msgid "Erlaubt Benutzern das direkte Vorlesen von Seiteninhalten über die native SpeechSynthesis-Schnittstelle des Webbrowsers."
+msgstr ""
+
+#: templates/admin-dashboard.php:125
+msgid "WCAG Konformitäts-Scanner"
+msgstr ""
+
+#: templates/admin-dashboard.php:126
+msgid "Analysiert Ihre WordPress-Seiten auf WCAG 2.1 Konformität (fehlende Alternativtexte, Heading-Struktur, leere Links)."
+msgstr ""
+
+#: templates/admin-dashboard.php:129
+msgid "Barrierefreiheits-Hilfen (EAA / BITV)"
+msgstr ""
+
+#: templates/admin-dashboard.php:130
+msgid "Ergänzt automatisch Tastatur-Fokusrahmen, Skip-to-Content Links und korrigiert gängige ARIA-Attribute im DOM."
+msgstr ""
+
+#: templates/admin-dashboard.php:133
+msgid "Medien-Optimierung (Alt-Texte)"
+msgstr ""
+
+#: templates/admin-dashboard.php:134
+msgid "Echtzeit-Prüfung unbeschrifteter Bilder sowie ein Bulk-Editor für Medien zur barrierefreien Beschriftung."
+msgstr ""
+
+#: templates/admin-dashboard.php:137
+msgid "Editor Inhalts-Checker"
+msgstr ""
+
+#: templates/admin-dashboard.php:138
+msgid "Zeigt Live-Tipps im Gutenberg & Elementor Editor bezüglich Kontrasten, Hierarchien und Lesbarkeit."
+msgstr ""
+
+#: templates/admin-dashboard.php:141
+msgid "DSGVO Cookie-Einwilligung"
+msgstr ""
+
+#: templates/admin-dashboard.php:142
+msgid "Ein barrierefreies Cookie-Einwilligungs-Modal mit Tastatursteuerung und Focus-Trapping."
+msgstr ""
+
+#: templates/admin-dashboard.php:145
+msgid "Barrierefreiheitserklärung"
+msgstr ""
+
+#: templates/admin-dashboard.php:146
+msgid "Erzeugt einen Generator und Platzhalter für Ihre rechtliche Barrierefreiheitserklärung (BITV 2.0 konform)."
+msgstr ""

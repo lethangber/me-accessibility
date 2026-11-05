@@ -1,0 +1,117 @@
+/* Styles für die native Text-to-Speech Vorlesefunktion */
+
+.me-tts-player-section {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.me-theme-dark .me-tts-player-section {
+	border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.me-tts-player-box {
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 12px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.me-theme-dark .me-tts-player-box {
+	background: rgba(255, 255, 255, 0.03);
+	border-color: rgba(255, 255, 255, 0.08);
+}
+
+.me-tts-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.me-tts-control-btn {
+	background: var(--me-accent-color);
+	color: #ffffff;
+	border: none;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	outline: none;
+}
+
+.me-tts-control-btn:hover {
+	transform: scale(1.08);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.me-tts-control-btn:focus-visible {
+	outline: 3px solid var(--me-accent-color);
+	outline-offset: 2px;
+}
+
+.me-tts-control-btn svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+/* Stimmen und Parameter */
+.me-tts-params {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.me-tts-params select {
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
+	color: #1e293b;
+	font-size: 13px;
+	outline: none;
+}
+.me-theme-dark .me-tts-params select {
+	background-color: #1e293b;
+	border-color: rgba(255, 255, 255, 0.15);
+	color: #f8fafc;
+}
+
+.me-tts-range-box {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.me-tts-range-box input[type="range"] {
+	flex: 1;
+	accent-color: var(--me-accent-color);
+	height: 6px;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+}
+.me-theme-dark .me-tts-range-box input[type="range"] {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   SPRECHEN: SATZ-HIGHLIGHTING IM SEITEN-INHALT
+   ========================================== */
+.me-tts-highlight {
+	background-color: rgba(253, 224, 71, 0.4) !important; /* Gelbes Highlight mit Transparenz */
+	box-shadow: 0 0 8px rgba(253, 224, 71, 0.6) !important;
+	border-radius: 4px;
+	transition: background-color 0.15s ease;
+}

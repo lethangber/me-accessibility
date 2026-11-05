@@ -1,0 +1,55 @@
+{
+  "lang": "da",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Åbn tilgængelighedsmenu",
+    "close": "Luk menu",
+    "title": "Tilgængelighed",
+    "resetAll": "Nulstil alle indstillinger",
+    "poweredBy": "Drevet af"
+  },
+  "profiles": {
+    "title": "Tilgængelighedsprofiler",
+    "adhd": "ADHD-venlig",
+    "adhdDesc": "Reducerer distraktioner, fokuserer indhold.",
+    "vision": "Synshandicap",
+    "visionDesc": "Forøger skriftstørrelse og kontrast.",
+    "keyboard": "Tastaturnavigation",
+    "keyboardDesc": "Fremhæver interaktive elementer.",
+    "cognitive": "Kognitiv",
+    "cognitiveDesc": "Forenkler læsehjælpemidler."
+  },
+  "content": {
+    "title": "Tekst og indhold",
+    "increaseFont": "Forøg tekst",
+    "decreaseFont": "Formindsk tekst",
+    "readableFont": "Læselig skrift",
+    "dyslexiaFont": "Ordblindhed"
+  },
+  "colors": {
+    "title": "Farve og kontrast",
+    "grayscale": "Gråskala",
+    "highContrast": "Høj kontrast",
+    "negativeContrast": "Inverter",
+    "darkMode": "Mørk tilstand"
+  },
+  "navigation": {
+    "title": "Navigation og læsning",
+    "readingGuide": "Læselinje",
+    "readingMask": "Læsemaske",
+    "cursorEnlarge": "Stor markør",
+    "highlightLinks": "Fremhæv links",
+    "highlightHeadings": "Overskrifter",
+    "pauseAnimations": "Animationer"
+  },
+  "tts": {
+    "title": "Tekst til tale",
+    "play": "Afspil",
+    "pause": "Pause",
+    "stop": "Stop",
+    "speed": "Hastighed",
+    "selectVoice": "Vælg stemme",
+    "noText": "Ingen læsbar tekst fundet på denne side.",
+    "fallback": "Bruger standardstemme."
+  }
+}

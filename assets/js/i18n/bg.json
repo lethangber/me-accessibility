@@ -1,0 +1,55 @@
+{
+  "lang": "bg",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Отвори меню за достъпност",
+    "close": "Затвори менюто",
+    "title": "Достъпност",
+    "resetAll": "Нулирай всички настройки",
+    "poweredBy": "Задвижвано от"
+  },
+  "profiles": {
+    "title": "Профили за достъпност",
+    "adhd": "Приятен за ADHD",
+    "adhdDesc": "Намалява разсейванията.",
+    "vision": "Зрително увреждане",
+    "visionDesc": "Увеличава шрифта и контраста.",
+    "keyboard": "Клавишна навигация",
+    "keyboardDesc": "Откроява интерактивните елементи.",
+    "cognitive": "Когнитивен",
+    "cognitiveDesc": "Опростява помощниците за четене."
+  },
+  "content": {
+    "title": "Текст и съдържание",
+    "increaseFont": "Увеличи шрифта",
+    "decreaseFont": "Намали шрифта",
+    "readableFont": "Четлив шрифт",
+    "dyslexiaFont": "Дислексия"
+  },
+  "colors": {
+    "title": "Цвят и контраст",
+    "grayscale": "Нюанси на сивото",
+    "highContrast": "Висок контраст",
+    "negativeContrast": "Инвертиране",
+    "darkMode": "Тъмен режим"
+  },
+  "navigation": {
+    "title": "Навигация и четене",
+    "readingGuide": "Ръководство за четене",
+    "readingMask": "Маска за четене",
+    "cursorEnlarge": "Голям курсор",
+    "highlightLinks": "Открой връзките",
+    "highlightHeadings": "Заглавия",
+    "pauseAnimations": "Анимации"
+  },
+  "tts": {
+    "title": "Текст към реч",
+    "play": "Възпроизвеждане",
+    "pause": "Пауза",
+    "stop": "Спри",
+    "speed": "Скорост",
+    "selectVoice": "Избери глас",
+    "noText": "На тази страница няма четим текст.",
+    "fallback": "Използва се гласът по подразбиране."
+  }
+}

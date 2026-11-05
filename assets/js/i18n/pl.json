@@ -1,0 +1,55 @@
+{
+  "lang": "pl",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Otwórz menu dostępności",
+    "close": "Zamknij menu",
+    "title": "Dostępność",
+    "resetAll": "Zresetuj wszystkie ustawienia",
+    "poweredBy": "Zasilane przez"
+  },
+  "profiles": {
+    "title": "Profile dostępności",
+    "adhd": "Przyjazny dla ADHD",
+    "adhdDesc": "Zmniejsza rozproszenia, skupia treść.",
+    "vision": "Niepełnosprawność wzroku",
+    "visionDesc": "Zwiększa rozmiar czcionki i kontrast.",
+    "keyboard": "Nawigacja klawiaturą",
+    "keyboardDesc": "Podświetla interaktywne elementy.",
+    "cognitive": "Kognitywny",
+    "cognitiveDesc": "Upraszcza pomoce do czytania."
+  },
+  "content": {
+    "title": "Tekst i Treść",
+    "increaseFont": "Powiększ tekst",
+    "decreaseFont": "Pomniejsz tekst",
+    "readableFont": "Czytelna czcionka",
+    "dyslexiaFont": "Dysleksja"
+  },
+  "colors": {
+    "title": "Kolor i Kontrast",
+    "grayscale": "Skala szarości",
+    "highContrast": "Wysoki kontrast",
+    "negativeContrast": "Odwróć",
+    "darkMode": "Tryb ciemny"
+  },
+  "navigation": {
+    "title": "Nawigacja i Czytanie",
+    "readingGuide": "Linia czytania",
+    "readingMask": "Maska czytania",
+    "cursorEnlarge": "Duży kursor",
+    "highlightLinks": "Zaznacz łącza",
+    "highlightHeadings": "Nagłówki",
+    "pauseAnimations": "Animacje"
+  },
+  "tts": {
+    "title": "Zamiana tekstu na mowę",
+    "play": "Odtwarzaj",
+    "pause": "Wstrzymaj",
+    "stop": "Zatrzymaj",
+    "speed": "Prędkość",
+    "selectVoice": "Wybierz głos",
+    "noText": "Nie znaleziono tekstu do odczytania na tej stronie.",
+    "fallback": "Używanie domyślnego głosu."
+  }
+}

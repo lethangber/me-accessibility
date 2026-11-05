@@ -1,0 +1,55 @@
+{
+  "lang": "hu",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Akadálymentességi menü megnyitása",
+    "close": "Menü bezárása",
+    "title": "Akadálymentesség",
+    "resetAll": "Összes beállítás alaphelyzetbe állítása",
+    "poweredBy": "Működteti"
+  },
+  "profiles": {
+    "title": "Akadálymentességi profilok",
+    "adhd": "ADHD-barát",
+    "adhdDesc": "Csökkenti a figyelemzavarokat, a tartalomra fókuszál.",
+    "vision": "Látásszérelem",
+    "visionDesc": "Növeli a betűméretet és a kontrasztot.",
+    "keyboard": "Billentyűzetes navigáció",
+    "keyboardDesc": "Kiemeli az interaktív elemeket.",
+    "cognitive": "Kognitív",
+    "cognitiveDesc": "Egyszerűsíti az olvasássegítőket."
+  },
+  "content": {
+    "title": "Szöveg és tartalom",
+    "increaseFont": "Szöveg nagyítása",
+    "decreaseFont": "Szöveg kicsinyítése",
+    "readableFont": "Olvasható betűtípus",
+    "dyslexiaFont": "Diszlexia"
+  },
+  "colors": {
+    "title": "Szín és kontraszt",
+    "grayscale": "Szürkeárnyalat",
+    "highContrast": "Magas kontraszt",
+    "negativeContrast": "Invertálás",
+    "darkMode": "Sötét mód"
+  },
+  "navigation": {
+    "title": "Navigáció és olvasás",
+    "readingGuide": "Olvasási vezérfonal",
+    "readingMask": "Olvasási maszk",
+    "cursorEnlarge": "Nagy kurzor",
+    "highlightLinks": "Hivatkozások kiemelése",
+    "highlightHeadings": "Címek",
+    "pauseAnimations": "Animációk"
+  },
+  "tts": {
+    "title": "Szöveg hanggá alakítása",
+    "play": "Lejátszás",
+    "pause": "Szünet",
+    "stop": "Leállítás",
+    "speed": "Sebesség",
+    "selectVoice": "Hang kiválasztása",
+    "noText": "Ezen az oldalon nem található olvasható szöveg.",
+    "fallback": "Az alapértelmezett hang használata."
+  }
+}

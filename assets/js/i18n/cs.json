@@ -1,0 +1,55 @@
+{
+  "lang": "cs",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Otevřít nabídku přístupnosti",
+    "close": "Zavřít nabídku",
+    "title": "Přístupnost",
+    "resetAll": "Obnovit všechna nastavení",
+    "poweredBy": "Napomáhá jí"
+  },
+  "profiles": {
+    "title": "Profily přístupnosti",
+    "adhd": "Přátelský pro ADHD",
+    "adhdDesc": "Snižuje rozptýlení, soustřeďuje obsah.",
+    "vision": "Zrakové postižení",
+    "visionDesc": "Zvětšuje písmo a kontrast.",
+    "keyboard": "Klávesnicová navigace",
+    "keyboardDesc": "Zvýrazňuje interaktivní prvky.",
+    "cognitive": "Kognitivní",
+    "cognitiveDesc": "Zjednodušuje pomůcky pro čtení."
+  },
+  "content": {
+    "title": "Text a obsah",
+    "increaseFont": "Zvětšit text",
+    "decreaseFont": "Zmenšit text",
+    "readableFont": "Čitelné písmo",
+    "dyslexiaFont": "Dyslexie"
+  },
+  "colors": {
+    "title": "Barva a kontrast",
+    "grayscale": "Šedotónový",
+    "highContrast": "Vysoký kontrast",
+    "negativeContrast": "Invertovat",
+    "darkMode": "Tmavý režim"
+  },
+  "navigation": {
+    "title": "Navigace a čtení",
+    "readingGuide": "Čtenářský pruh",
+    "readingMask": "Čtenářská maska",
+    "cursorEnlarge": "Velký kurzor",
+    "highlightLinks": "Zvýraznit odkazy",
+    "highlightHeadings": "Nadpisy",
+    "pauseAnimations": "Animace"
+  },
+  "tts": {
+    "title": "Syntéza řeči",
+    "play": "Spustit čtení",
+    "pause": "Pozastavit",
+    "stop": "Zastavit",
+    "speed": "Rychlost",
+    "selectVoice": "Vybrat hlas",
+    "noText": "Na této stránce nebyl nalezen žádný čitelný text.",
+    "fallback": "Používá se výchozí hlas."
+  }
+}

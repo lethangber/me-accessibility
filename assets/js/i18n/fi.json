@@ -1,0 +1,55 @@
+{
+  "lang": "fi",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Avaa esteettömyysvalikko",
+    "close": "Sulje valikko",
+    "title": "Esteettömyys",
+    "resetAll": "Nollaa kaikki asetukset",
+    "poweredBy": "Tarjoaa"
+  },
+  "profiles": {
+    "title": "Esteettömyysprofiilit",
+    "adhd": "ADHD-ystävällinen",
+    "adhdDesc": "Vähentää häiriöitä, keskittyy sisältöön.",
+    "vision": "Näkövamma",
+    "visionDesc": "Suurentaa kirjasinkokoa ja kontrastia.",
+    "keyboard": "Näppäimistönavigointi",
+    "keyboardDesc": "Korostaa vuorovaikutteisia elementtejä.",
+    "cognitive": "Kognitiivinen",
+    "cognitiveDesc": "Yksinkertaistaa lukemisen apuvälineitä."
+  },
+  "content": {
+    "title": "Teksti ja sisältö",
+    "increaseFont": "Suurenna tekstiä",
+    "decreaseFont": "Pienennä tekstiä",
+    "readableFont": "Luettava kirjasin",
+    "dyslexiaFont": "Lukemishäiriö"
+  },
+  "colors": {
+    "title": "Väri ja kontrasti",
+    "grayscale": "Harmaasävyt",
+    "highContrast": "Korkea kontrasti",
+    "negativeContrast": "Invertoi",
+    "darkMode": "Tumma tila"
+  },
+  "navigation": {
+    "title": "Navigointi ja lukeminen",
+    "readingGuide": "Lukuviiva",
+    "readingMask": "Lukumaski",
+    "cursorEnlarge": "Suuri kohdistin",
+    "highlightLinks": "Korosta linkit",
+    "highlightHeadings": "Otsikot",
+    "pauseAnimations": "Animaatiot"
+  },
+  "tts": {
+    "title": "Teksti puheeksi",
+    "play": "Toista",
+    "pause": "Tauko",
+    "stop": "Pysäytä",
+    "speed": "Nopeus",
+    "selectVoice": "Valitse ääni",
+    "noText": "Tältä sivulta ei löytynyt luettavaa tekstiä.",
+    "fallback": "Käytetään oletusarvoista ääntä."
+  }
+}

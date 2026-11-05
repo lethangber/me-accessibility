@@ -1,0 +1,55 @@
+{
+  "lang": "vi",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Mở menu tiếp cận",
+    "close": "Đóng menu",
+    "title": "Tiếp cận",
+    "resetAll": "Đặt lại tất cả cài đặt",
+    "poweredBy": "Được cung cấp bởi"
+  },
+  "profiles": {
+    "title": "Hồ sơ tiếp cận",
+    "adhd": "Thân thiện ADHD",
+    "adhdDesc": "Giảm mất tập trung, tập trung vào nội dung.",
+    "vision": "Khuyết tật thị giác",
+    "visionDesc": "Tăng cỡ chữ và độ tương phản.",
+    "keyboard": "Điều hướng bàn phím",
+    "keyboardDesc": "Đánh dấu các phần tử tương tác.",
+    "cognitive": "Nhận thức",
+    "cognitiveDesc": "Đơn giản hóa hỗ trợ đọc."
+  },
+  "content": {
+    "title": "Văn bản & Nội dung",
+    "increaseFont": "Tăng cỡ chữ",
+    "decreaseFont": "Giảm cỡ chữ",
+    "readableFont": "Phông dễ đọc",
+    "dyslexiaFont": "Khó đọc"
+  },
+  "colors": {
+    "title": "Màu sắc & Tương phản",
+    "grayscale": "Thang xám",
+    "highContrast": "Tương phản cao",
+    "negativeContrast": "Đảo ngược",
+    "darkMode": "Chế độ tối"
+  },
+  "navigation": {
+    "title": "Điều hướng & Hỗ trợ đọc",
+    "readingGuide": "Thanh dẫn đọc",
+    "readingMask": "Mặt nạ đọc",
+    "cursorEnlarge": "Con trỏ lớn",
+    "highlightLinks": "Làm nổi bật liên kết",
+    "highlightHeadings": "Tiêu đề",
+    "pauseAnimations": "Hoạt ảnh"
+  },
+  "tts": {
+    "title": "Đọc văn bản (Text to Speech)",
+    "play": "Phát đọc",
+    "pause": "Tạm dừng",
+    "stop": "Dừng",
+    "speed": "Tốc độ",
+    "selectVoice": "Chọn giọng đọc",
+    "noText": "Không tìm thấy văn bản có thể đọc trên trang này.",
+    "fallback": "Sử dụng giọng mặc định."
+  }
+}

@@ -1,0 +1,64 @@
+/* ==========================================
+   Frontend Barrierefreiheits-Korrekturen (CSS)
+   ========================================== */
+
+/* 1. VISUELLER FOKUS-STIL FÜR BESSERE KEYBOARD-NAVIGATION */
+/* Gewährleistet, dass interaktive Elemente beim Tabben deutlich sichtbar sind */
+:focus-visible,
+.me-force-focus:focus {
+	outline: 3px solid var(--me-accent-color, #2563eb) !important;
+	outline-offset: 3px !important;
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.4) !important;
+	transition: outline-offset 0.15s ease-in-out !important;
+}
+
+/* 2. TASTATURGERECHTER SKIP-LINK (SCHNELLSPRING-LINK) */
+/* Ein leichter Skip-to-Content Link, der nur bei Tastatur-Fokus eingeblendet wird */
+.me-skip-link {
+	position: fixed !important;
+	top: -100px !important;
+	left: 20px !important;
+	background: #0f172a !important; /* Slate 900 */
+	color: #ffffff !important;
+	padding: 12px 24px !important;
+	border-radius: 8px !important;
+	font-weight: 700 !important;
+	font-size: 14px !important;
+	text-decoration: none !important;
+	z-index: 9999999 !important;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+	transition: top 0.2s ease-in-out !important;
+	border: 2px solid var(--me-accent-color, #2563eb) !important;
+}
+
+.me-skip-link:focus {
+	top: 20px !important;
+	outline: none !important;
+}
+
+/* 3. OPTIMIERUNG DER TOUCH-TARGETS FÜR MOBILGERÄTE */
+/* Erhöht die Klickflächen auf mindestens 44x44px laut WCAG 2.1 Richtlinien */
+@media (max-width: 768px) {
+	.me-touch-target-adjusted {
+		min-width: 44px !important;
+		min-height: 44px !important;
+		display: inline-flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		box-sizing: border-box !important;
+	}
+}
+
+/* 4. BEHEBUNG LEERER LINKS / HILFSKLASSEN */
+/* Stellt sicher, dass ausgeblendete ARIA-Labels lesbar bleiben */
+.me-sr-only {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}

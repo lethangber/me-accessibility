@@ -1,0 +1,55 @@
+{
+  "lang": "ro",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Deschide meniu accesibilitate",
+    "close": "Închide meniu",
+    "title": "Accesibilitate",
+    "resetAll": "Resetează toate setările",
+    "poweredBy": "Realizat de"
+  },
+  "profiles": {
+    "title": "Profiluri de accesibilitate",
+    "adhd": "Prietenos ADHD",
+    "adhdDesc": "Reduce distracțiile, se concentrează pe conținut.",
+    "vision": "Deficiență vizuală",
+    "visionDesc": "Mărește dimensiunea fontului și contrastul.",
+    "keyboard": "Navigare cu tastatura",
+    "keyboardDesc": "Evidențiază elementele interactive.",
+    "cognitive": "Cognitiv",
+    "cognitiveDesc": "Simplifică ajutoarele de lectură."
+  },
+  "content": {
+    "title": "Text și conținut",
+    "increaseFont": "Mărește textul",
+    "decreaseFont": "Micșorează textul",
+    "readableFont": "Font lizibil",
+    "dyslexiaFont": "Dislexie"
+  },
+  "colors": {
+    "title": "Culoare și contrast",
+    "grayscale": "Nuanțe de gri",
+    "highContrast": "Contrast ridicat",
+    "negativeContrast": "Inversează",
+    "darkMode": "Mod întunecat"
+  },
+  "navigation": {
+    "title": "Navigare și lectură",
+    "readingGuide": "Ghid de lectură",
+    "readingMask": "Mască de lectură",
+    "cursorEnlarge": "Cursor mare",
+    "highlightLinks": "Evidențiază link-uri",
+    "highlightHeadings": "Titluri",
+    "pauseAnimations": "Animații"
+  },
+  "tts": {
+    "title": "Text la vorbire",
+    "play": "Redează",
+    "pause": "Pauză",
+    "stop": "Oprește",
+    "speed": "Viteză",
+    "selectVoice": "Selectează voce",
+    "noText": "Nu s-a găsit text lizibil pe această pagină.",
+    "fallback": "Se utilizează vocea implicită."
+  }
+}

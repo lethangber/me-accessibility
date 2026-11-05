@@ -1,0 +1,55 @@
+{
+  "lang": "nl",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Toegankelijkheidsmenu openen",
+    "close": "Menu sluiten",
+    "title": "Toegankelijkheid",
+    "resetAll": "Alle instellingen resetten",
+    "poweredBy": "Mogelijk gemaakt door"
+  },
+  "profiles": {
+    "title": "Toegankelijkheidsprofielen",
+    "adhd": "ADHD-vriendelijk",
+    "adhdDesc": "Vermindert afleidingen, richt zich op inhoud.",
+    "vision": "Visuele beperking",
+    "visionDesc": "Vergroot lettergrootte en contrast.",
+    "keyboard": "Toetsenbordnavigatie",
+    "keyboardDesc": "Markeert interactieve elementen.",
+    "cognitive": "Cognitief",
+    "cognitiveDesc": "Vereenvoudigt leeshulpen."
+  },
+  "content": {
+    "title": "Tekst & Inhoud",
+    "increaseFont": "Tekst vergroten",
+    "decreaseFont": "Tekst verkleinen",
+    "readableFont": "Leesbaar lettertype",
+    "dyslexiaFont": "Dyslexie"
+  },
+  "colors": {
+    "title": "Kleur & Contrast",
+    "grayscale": "Grijstinten",
+    "highContrast": "Hoog contrast",
+    "negativeContrast": "Inverteren",
+    "darkMode": "Donkere modus"
+  },
+  "navigation": {
+    "title": "Navigatie & Leeshulpen",
+    "readingGuide": "Leesregel",
+    "readingMask": "Leesmasker",
+    "cursorEnlarge": "Grote cursor",
+    "highlightLinks": "Links markeren",
+    "highlightHeadings": "Koppen",
+    "pauseAnimations": "Animaties"
+  },
+  "tts": {
+    "title": "Tekst naar spraak",
+    "play": "Voorlezen starten",
+    "pause": "Pauzeren",
+    "stop": "Stoppen",
+    "speed": "Snelheid",
+    "selectVoice": "Stem selecteren",
+    "noText": "Geen leesbare tekst gevonden op deze pagina.",
+    "fallback": "Standaardstem wordt gebruikt."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "lang": "sv",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Öppna tillgänglighetsmenyn",
+    "close": "Stäng menyn",
+    "title": "Tillgänglighet",
+    "resetAll": "Återställ alla inställningar",
+    "poweredBy": "Drivs av"
+  },
+  "profiles": {
+    "title": "Tillgänglighetsprofiler",
+    "adhd": "ADHD-vänlig",
+    "adhdDesc": "Minskar distraktioner, fokuserar innehållet.",
+    "vision": "Synnedsättning",
+    "visionDesc": "Ökar textstorlek och kontrast.",
+    "keyboard": "Tangentbordsnavigation",
+    "keyboardDesc": "Markerar interaktiva element.",
+    "cognitive": "Kognitiv",
+    "cognitiveDesc": "Förenklar lässtöd."
+  },
+  "content": {
+    "title": "Text och innehåll",
+    "increaseFont": "Öka text",
+    "decreaseFont": "Minska text",
+    "readableFont": "Läsbart teckensnitt",
+    "dyslexiaFont": "Dyslexi"
+  },
+  "colors": {
+    "title": "Färg och kontrast",
+    "grayscale": "Gråskala",
+    "highContrast": "Hög kontrast",
+    "negativeContrast": "Invertera",
+    "darkMode": "Mörkt läge"
+  },
+  "navigation": {
+    "title": "Navigation och läsning",
+    "readingGuide": "Läslinje",
+    "readingMask": "Läsmask",
+    "cursorEnlarge": "Stor markör",
+    "highlightLinks": "Markera länkar",
+    "highlightHeadings": "Rubriker",
+    "pauseAnimations": "Animationer"
+  },
+  "tts": {
+    "title": "Text till tal",
+    "play": "Spela upp",
+    "pause": "Pausa",
+    "stop": "Stoppa",
+    "speed": "Hastighet",
+    "selectVoice": "Välj röst",
+    "noText": "Ingen läsbar text hittades på denna sida.",
+    "fallback": "Använder standardröst."
+  }
+}

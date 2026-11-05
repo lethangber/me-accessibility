@@ -1,0 +1,55 @@
+{
+  "lang": "sl",
+  "dir": "ltr",
+  "toolbar": {
+    "open": "Odpri meni dostopnosti",
+    "close": "Zapri meni",
+    "title": "Dostopnost",
+    "resetAll": "Ponastavi vse nastavitve",
+    "poweredBy": "Poganja"
+  },
+  "profiles": {
+    "title": "Profili dostopnosti",
+    "adhd": "Prijazno za ADHD",
+    "adhdDesc": "Zmanjša motnje, osredotoča se na vsebino.",
+    "vision": "Motnja vida",
+    "visionDesc": "Poveča velikost pisave in kontrast.",
+    "keyboard": "Navigacija s tipkovnico",
+    "keyboardDesc": "Poudari interaktivne elemente.",
+    "cognitive": "Kognitivno",
+    "cognitiveDesc": "Poenostavlja bralne pripomočke."
+  },
+  "content": {
+    "title": "Besedilo in vsebina",
+    "increaseFont": "Povečaj besedilo",
+    "decreaseFont": "Pomanjšaj besedilo",
+    "readableFont": "Berljiva pisava",
+    "dyslexiaFont": "Disleksija"
+  },
+  "colors": {
+    "title": "Barva in kontrast",
+    "grayscale": "Sivinski toni",
+    "highContrast": "Visok kontrast",
+    "negativeContrast": "Obrni",
+    "darkMode": "Temni režim"
+  },
+  "navigation": {
+    "title": "Navigacija in branje",
+    "readingGuide": "Bralni vodnik",
+    "readingMask": "Bralna maska",
+    "cursorEnlarge": "Velik kazalec",
+    "highlightLinks": "Označi povezave",
+    "highlightHeadings": "Naslovi",
+    "pauseAnimations": "Animacije"
+  },
+  "tts": {
+    "title": "Besedilo v govor",
+    "play": "Predvajaj",
+    "pause": "Premor",
+    "stop": "Ustavi",
+    "speed": "Hitrost",
+    "selectVoice": "Izberi glas",
+    "noText": "Na tej strani ni bilo najdeno berljivo besedilo.",
+    "fallback": "Uporablja se privzeti glas."
+  }
+}
